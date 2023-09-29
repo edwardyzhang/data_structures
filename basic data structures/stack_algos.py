@@ -23,7 +23,7 @@ def botToTop(s1):
 
 def infixToPostfix(s):
     #taking a string of an expression in infix notation, return the expression in postfix notation
-    oper = ['+', '-', '*', '/'] 
+    oper = ['+', '-', '*', '/', '(', ')'] 
     operators = Stack()
     operands = Stack()
 
@@ -46,4 +46,4 @@ def infixToPostfix(s):
     
     return postfix
 
-print (infixToPostfix('5*7+6*8'))
+print (infixToPostfix('5*7+6*(8+2)*3'))
